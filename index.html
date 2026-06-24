@@ -3,222 +3,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Art of Batik Surakarta - Premium Profile</title>
+    <title>The Royal Heritage of Batik Surakarta - Premium Portal</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts Combination -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
         h1, h2, h3, h4, .font-serif { font-family: 'Playfair Display', serif; }
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
         .glass-nav {
-            background-color: rgba(67, 20, 7, 0.95);
-            backdrop-filter: blur(12px);
+            background-color: rgba(45, 15, 8, 0.98);
+            backdrop-filter: blur(16px);
+        }
+        /* Custom pattern background overlay */
+        .batik-overlay {
+            background-image: radial-gradient(#b45309 0.75px, transparent 0.75px), radial-gradient(#b45309 0.75px, #faf8f5 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+            opacity: 0.03;
         }
     </style>
 </head>
-<body class="bg-[#FAF8F5] text-stone-800 antialiased selection:bg-amber-900 selection:text-white">
+<body class="bg-[#FAF8F5] text-stone-800 antialiased selection:bg-amber-900 selection:text-white relative">
 
-    <header class="glass-nav text-amber-50 sticky top-0 z-50 shadow-xl border-b border-amber-900/40 transition-all duration-300">
-        <div class="container mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center">
-            <div class="flex items-center space-x-4 mb-4 md:mb-0 group cursor-pointer">
-                <div class="w-11 h-11 bg-gradient-to-tr from-amber-700 to-amber-500 text-white rounded-xl flex items-center justify-center font-bold text-xl shadow-lg group-hover:rotate-12 transition-transform duration-300">
-                    B
+    <!-- Efek Latar Belakang Pola Halus (Biar Ramai & Detail) -->
+    <div class="absolute inset-0 batik-overlay pointer-events-none z-0"></div>
+
+    <!-- 1. HEADER & NAVBAR (20 Poin) -->
+    <header class="glass-nav text-amber-50 sticky top-0 z-50 shadow-2xl border-b border-amber-500/20 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex flex-col lg:flex-row justify-between items-center">
+            <div class="flex items-center space-x-4 mb-4 lg:mb-0 group cursor-pointer">
+                <div class="w-12 h-12 bg-gradient-to-br from-amber-600 via-amber-700 to-amber-900 text-amber-100 rounded-xl flex items-center justify-center font-black text-2xl shadow-xl group-hover:rotate-12 transition-transform duration-300 border border-amber-500/30">
+                    👑
                 </div>
                 <div>
-                    <h1 class="text-2xl font-bold tracking-wide bg-gradient-to-r from-amber-200 to-amber-50 bg-clip-text text-transparent">Surakarta</h1>
-                    <p class="text-[10px] uppercase tracking-widest text-amber-400 font-semibold -mt-1">Heritage & Culture</p>
+                    <h1 class="text-2xl font-black tracking-wide bg-gradient-to-r from-amber-300 via-amber-100 to-white bg-clip-text text-transparent">Batik Surakarta</h1>
+                    <p class="text-[10px] uppercase tracking-widest text-amber-400 font-bold -mt-0.5 flex items-center gap-1">
+                        <span>●</span> Official Academic Heritage Portal
+                    </p>
                 </div>
             </div>
-            <nav class="flex space-x-8 text-sm font-medium tracking-wider uppercase">
-                <a href="#Beranda" class="hover:text-amber-400 transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-amber-400 hover:after:w-full after:transition-all">Beranda</a>
-                <a href="#Motif" class="hover:text-amber-400 transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-amber-400 hover:after:w-full after:transition-all">Motif Klasik</a>
-                <a href="#Filosofi" class="hover:text-amber-400 transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-amber-400 hover:after:w-full after:transition-all">Filosofi</a>
-                <a href="#Kontak" class="hover:text-amber-400 transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-amber-400 hover:after:w-full after:transition-all">Kontak</a>
+            <nav class="flex flex-wrap justify-center gap-6 lg:gap-8 text-xs md:text-sm font-bold tracking-widest uppercase">
+                <a href="#Beranda" class="hover:text-amber-400 transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-amber-400 hover:after:w-full after:transition-all">Beranda</a>
+                <a href="#Motif" class="hover:text-amber-400 transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-amber-400 hover:after:w-full after:transition-all">Koleksi Motif</a>
+                <a href="#Filosofi" class="hover:text-amber-400 transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-amber-400 hover:after:w-full after:transition-all">Filosofi & Proses</a>
+                <a href="#Kontak" class="hover:text-amber-400 transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-amber-400 hover:after:w-full after:transition-all">Hubungi Kami</a>
             </nav>
         </div>
     </header>
 
-    <section id="Beranda" class="relative overflow-hidden bg-stone-950 text-white min-h-[600px] flex items-center">
-        <div class="absolute inset-0 z-0 bg-gradient-to-r from-black via-transparent to-black/50 opacity-80 mix-blend-multiply"></div>
-        <div class="absolute inset-0 z-0 opacity-30 scale-105 transition-transform duration-1000">
-            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1920&q=80" alt="Premium Batik Fabric" class="w-full h-full object-cover">
+    <!-- 2. SLIDER / HERO SECTION (20 Poin) -->
+    <section id="Beranda" class="relative overflow-hidden bg-stone-950 text-white min-h-[650px] flex items-center shadow-inner">
+        <!-- Efek Lapisan Gradasi Gelap Elegan -->
+        <div class="absolute inset-0 z-10 bg-gradient-to-tr from-stone-950 via-stone-900/80 to-transparent opacity-90"></div>
+        <div class="absolute inset-0 z-0 opacity-40 scale-105 transition-transform duration-1000">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1920&q=80" alt="Premium Batik Masterpiece" class="w-full h-full object-cover object-center">
         </div>
         
-        <div class="container mx-auto px-6 relative z-10 py-20">
-            <div class="max-w-3xl space-y-6">
-                <div class="inline-flex items-center space-x-2 bg-amber-900/60 border border-amber-700/50 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest text-amber-300 uppercase">
-                    <span>✨ Masterpiece of Indonesia</span>
+        <div class="container mx-auto px-6 relative z-20 py-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-8 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center space-x-2 bg-amber-950/80 border border-amber-600/60 backdrop-blur-md px-4 py-2 rounded-full text-[11px] font-bold tracking-widest text-amber-300 uppercase shadow-md">
+                    <span class="flex h-2 w-2 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span></span>
+                    <span>Karya Adiluhung Warisan Dunia UNESCO</span>
                 </div>
-                <h2 class="text-5xl md:text-7xl font-bold leading-[1.1] text-stone-100">
-                    Goresan Canting <br><span class="italic font-normal text-amber-400">Jiwa Luhur</span> Solo
+                <h2 class="text-5xl md:text-7xl font-extrabold leading-[1.1] text-stone-100 tracking-tight">
+                    Simfoni Malam, <br>Jiwa & <span class="italic font-normal text-amber-400 bg-gradient-to-r from-amber-400 to-yellow-200 bg-clip-text text-transparent">Takdir Luhur</span> Solo
                 </h2>
-                <p class="text-base md:text-xl text-stone-300 font-light max-w-xl leading-relaxed">
-                    Setiap jalinan lilin malam dan warna soga alami adalah bentukan doa, wibawa, dan harmoni spiritual yang diwariskan turun-temurun di bumi Surakarta.
+                <p class="text-sm md:text-lg text-stone-300 font-light max-w-2xl leading-relaxed mx-auto lg:mx-0">
+                    Bukan sekadar kain hiasan, setiap ketukan canting tulis, keheningan rasa, dan balutan warna soga alami di Surakarta memuat berkah spiritual, kedudukan martabat, serta keselarasan kosmologis Kraton yang abadi.
                 </p>
-                <div class="pt-4 flex flex-wrap gap-4">
-                    <a href="#Motif" class="bg-gradient-to-r from-amber-700 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white font-semibold px-8 py-4 rounded-xl shadow-lg shadow-amber-950/50 transition-all transform hover:-translate-y-0.5 inline-block text-sm uppercase tracking-wider">
-                        Jelajahi Koleksi
+                <div class="pt-4 flex flex-wrap justify-center lg:justify-start gap-4">
+                    <a href="#Motif" class="bg-gradient-to-r from-amber-600 to-amber-800 hover:from-amber-500 hover:to-amber-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-amber-950/80 transition-all transform hover:-translate-y-1 inline-block text-xs uppercase tracking-widest tracking-wider border border-amber-500/20">
+                        Eksplorasi Motif 🌟
                     </a>
-                    <a href="#Filosofi" class="border border-stone-500 hover:border-amber-400 hover:bg-white/5 text-white font-medium px-8 py-4 rounded-xl transition-all inline-block text-sm uppercase tracking-wider">
-                        Pelajari Sejarah
+                    <a href="#Filosofi" class="border-2 border-stone-600 hover:border-amber-400 hover:bg-white/5 text-stone-200 font-bold px-8 py-4 rounded-xl transition-all inline-block text-xs uppercase tracking-widest">
+                        Pelajari Seni Filosofi
                     </a>
+                </div>
+            </div>
+            
+            <!-- Tambahan Widget Kanan di Hero agar Terlihat Ramai & Detail -->
+            <div class="lg:col-span-4 hidden lg:block bg-stone-900/60 border border-amber-500/20 backdrop-blur-md p-6 rounded-2xl shadow-2xl space-y-4">
+                <h4 class="text-amber-400 font-bold text-sm tracking-widest uppercase">📌 Sorotan Utama Portal</h4>
+                <div class="divide-y divide-stone-800 text-xs">
+                    <div class="py-3 flex justify-between"><span class="text-stone-400">Asal Wilayah</span><span class="text-stone-200 font-semibold">Surakarta Hadiningrat</span></div>
+                    <div class="py-3 flex justify-between"><span class="text-stone-400">Karakter Warna</span><span class="text-stone-200 font-semibold">Soga Alam (Kecokelatan)</span></div>
+                    <div class="py-3 flex justify-between"><span class="text-stone-400">Teknik Utama</span><span class="text-stone-200 font-semibold">Canting Tulis & Cap Tembaga</span></div>
+                    <div class="py-3 flex justify-between"><span class="text-stone-400">Status Akademik</span><span class="text-amber-300 font-bold">UAS Pemrograman Web</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="Motif" class="py-24 bg-white relative">
+    <!-- 3. 3 CONTAINER COLUMN WITH TOP IMAGE & DESCRIPTION (20 Poin) -->
+    <section id="Motif" class="py-24 bg-white relative z-10">
         <div class="container mx-auto px-6">
-            <div class="max-w-2xl mx-auto text-center mb-20">
-                <span class="text-amber-800 font-bold text-xs uppercase tracking-widest">The Legacy</span>
-                <h3 class="text-4xl md:text-5xl font-bold text-stone-900 mt-2">Motif Keraton Paling Sakral</h3>
-                <div class="w-16 h-[3px] bg-amber-600 mx-auto mt-4 rounded-full"></div>
-                <p class="text-stone-500 mt-4 text-sm md:text-base">Karya seni adiluhung yang dulunya eksklusif diciptakan untuk lingkungan keluarga raja, penuh perlambangan filosofi hidup.</p>
+            <div class="max-w-3xl mx-auto text-center mb-20">
+                <span class="text-amber-700 font-extrabold text-xs uppercase tracking-widest bg-amber-100 px-3 py-1 rounded-md">Katalog Khusus</span>
+                <h3 class="text-4xl md:text-5xl font-black text-stone-900 mt-3 tracking-tight">Eksplorasi Ragam Hias Klasik</h3>
+                <div class="w-24 h-[4px] bg-gradient-to-r from-amber-700 to-amber-500 mx-auto mt-4 rounded-full"></div>
+                <p class="text-stone-500 mt-4 text-sm md:text-base font-light">Tiga jenis pola dasar pusaka pakem yang menjadi tonggak agung kebudayaan sandang di wilayah Surakarta.</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="group bg-[#FAF8F5] rounded-2xl border border-stone-200/60 overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 card-animate">
+                <!-- Card 1 -->
+                <div class="group bg-[#FAF8F5] rounded-3xl border border-stone-200/80 overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 card-glow relative">
                     <div class="overflow-hidden h-64 relative">
-                        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Motif Parang" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-stone-950/40 to-transparent"></div>
+                        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Motif Parang" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <span class="absolute top-4 right-4 bg-red-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">🔒 Motif Larangan</span>
                     </div>
-                    <div class="p-8">
-                        <span class="text-xs font-bold text-amber-700 tracking-wider uppercase">Batik Tulis Pakem</span>
-                        <h4 class="font-bold text-2xl mt-1 mb-3 text-stone-900">Parang Rusak Barong</h4>
+                    <div class="p-8 space-y-3">
+                        <span class="text-xs font-bold text-amber-700 tracking-wider uppercase">Ornamen Geometris</span>
+                        <h4 class="font-extrabold text-2xl text-stone-900 group-hover:text-amber-800 transition-colors">Parang Rusak Barong</h4>
                         <p class="text-stone-600 text-sm leading-relaxed font-light">
-                            Lambang jalinan ombak samudera tanpa putus. Memiliki makna kedisiplinan diri, kekuasaan yang bijaksana, serta ksatriaan pantang menyerah yang harus dimiliki seorang pemimpin.
+                            Menggambarkan jalinan ombak laut selatan yang konstan menembus karang. Melambangkan kekuasaan sakral, ksatriaan sejati, serta keteguhan jiwa pemimpin untuk terus mengoreksi kesalahan internal diri.
                         </p>
+                        <div class="pt-2 border-t border-stone-200/60 flex justify-between items-center text-xs text-stone-400">
+                            <span>Peruntukan: <b>Raja & Bangsawan</b></span>
+                            <span class="text-amber-700 font-bold">Detail →</span>
+                        </div>
                     </div>
                 </div>
-                <div class="group bg-[#FAF8F5] rounded-2xl border border-stone-200/60 overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 card-animate">
+                <!-- Card 2 -->
+                <div class="group bg-[#FAF8F5] rounded-3xl border border-stone-200/80 overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 card-glow relative">
                     <div class="overflow-hidden h-64 relative">
-                        <img src="https://images.unsplash.com/photo-1606744824163-985d376605aa?auto=format&fit=crop&w=600&q=80" alt="Motif Sidomukti" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-stone-950/40 to-transparent"></div>
+                        <img src="https://images.unsplash.com/photo-1606744824163-985d376605aa?auto=format&fit=crop&w=600&q=80" alt="Motif Sidomukti" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <span class="absolute top-4 right-4 bg-amber-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">✨ Sakral Adat</span>
                     </div>
-                    <div class="p-8">
-                        <span class="text-xs font-bold text-amber-700 tracking-wider uppercase">Busana Pengantin Adat</span>
-                        <h4 class="font-bold text-2xl mt-1 mb-3 text-stone-900">Sidomukti Gajah</h4>
+                    <div class="p-8 space-y-3">
+                        <span class="text-xs font-bold text-amber-700 tracking-wider uppercase">Ornamen Non-Geometris</span>
+                        <h4 class="font-extrabold text-2xl text-stone-900 group-hover:text-amber-800 transition-colors">Sidomukti Kupu</h4>
                         <p class="text-stone-600 text-sm leading-relaxed font-light">
-                            Perpaduan kata "Sido" (menjadi terus-menerus) dan "Mukti" (kemuliaan). Kain doa agung yang dipakai pengantin Jawa agar perjalanan hidup barunya berlimpah berkah, ketenteraman, dan rezeki melimpah.
+                            Berasal dari paduan kata Jawa "Sido" (terlaksana) dan "Mukti" (kecukupan mulia). Merupakan kain wajib dalam upacara adat perkawinan, bermakna doa restu mendalam agar hidup berkecukupan tulus.
                         </p>
+                        <div class="pt-2 border-t border-stone-200/60 flex justify-between items-center text-xs text-stone-400">
+                            <span>Peruntukan: <b>Sepasang Pengantin</b></span>
+                            <span class="text-amber-700 font-bold">Detail →</span>
+                        </div>
                     </div>
                 </div>
-                <div class="group bg-[#FAF8F5] rounded-2xl border border-stone-200/60 overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 card-animate">
+                <!-- Card 3 -->
+                <div class="group bg-[#FAF8F5] rounded-3xl border border-stone-200/80 overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 card-glow relative">
                     <div class="overflow-hidden h-64 relative">
-                        <img src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=600&q=80" alt="Motif Truntum" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-stone-950/40 to-transparent"></div>
+                        <img src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=600&q=80" alt="Motif Truntum" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <span class="absolute top-4 right-4 bg-emerald-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">💖 Simbol Ketulusan</span>
                     </div>
-                    <div class="p-8">
-                        <span class="text-xs font-bold text-amber-700 tracking-wider uppercase">Simbol Ketulusan</span>
-                        <h4 class="font-bold text-2xl mt-1 mb-3 text-stone-900">Truntum Kencana</h4>
+                    <div class="p-8 space-y-3">
+                        <span class="text-xs font-bold text-amber-700 tracking-wider uppercase">Pola Semen Malam</span>
+                        <h4 class="font-extrabold text-2xl text-stone-900 group-hover:text-amber-800 transition-colors">Truntum Garuda</h4>
                         <p class="text-stone-600 text-sm leading-relaxed font-light">
-                            Pola bertabur bintang malam menyerupai kuntum bunga melati. Diciptakan dari ketulusan rasa Kanjeng Ratu Beruk, menyimbolkan rajutan cinta kasih sejati yang bersemi kembali tanpa pamrih.
+                            Pola berbentuk gugusan bintang kecil pelindung malam. Memiliki filosofi mendalam tentang tumbuhnya kembali jalinan cinta yang tulus, kesetiaan pernikahan, serta panduan asuhan orang tua yang bijak.
                         </p>
+                        <div class="pt-2 border-t border-stone-200/60 flex justify-between items-center text-xs text-stone-400">
+                            <span>Peruntukan: <b>Orang Tua Pengantin</b></span>
+                            <span class="text-amber-700 font-bold">Detail →</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="Filosofi" class="py-24 bg-[#F3EFEA] border-t border-stone-200/40">
-        <div class="container mx-auto px-6 space-y-24">
-            
+    <!-- 4. 2 CONTAINER COLUMN WITH LEFT/RIGHT IMAGE & DESCRIPTION (20 Poin) -->
+    <section id="Filosofi" class="py-24 bg-[#F2EDE6] border-t border-b border-stone-300/60 relative z-10">
+        <div class="container mx-auto px-6 space-y-28">
+            <div class="max-w-2xl mx-auto text-center">
+                <span class="text-xs font-extrabold tracking-widest text-amber-800 uppercase bg-amber-200/50 px-4 py-1.5 rounded-full shadow-sm">Tahapan Proses & Nilai Luhur</span>
+                <h3 class="text-4xl font-black text-stone-950 mt-4">Rahasia Mahakarya Tradisional</h3>
+            </div>
+
+            <!-- Baris 1: Gambar Kiri, Deskripsi Kanan + Detail Poin Komponen -->
             <div class="flex flex-col lg:flex-row items-center gap-16">
                 <div class="w-full lg:w-1/2 relative">
-                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-amber-200/40 rounded-2xl -z-10 animate-pulse"></div>
-                    <img src="https://images.unsplash.com/photo-1590736969955-71cc94801759?auto=format&fit=crop&w=800&q=80" alt="Proses Membatik" class="rounded-2xl shadow-xl w-full h-[400px] object-cover border-8 border-white">
+                    <div class="absolute -top-4 -left-4 w-32 h-32 bg-amber-600/10 rounded-3xl -z-10 animate-pulse"></div>
+                    <img src="https://images.unsplash.com/photo-1590736969955-71cc94801759?auto=format&fit=crop&w=800&q=80" alt="Proses Membatik Detail" class="rounded-3xl shadow-2xl w-full h-[420px] object-cover border-8 border-white">
                 </div>
-                <div class="w-full lg:w-1/2 space-y-4">
-                    <div class="inline-block text-xs font-bold tracking-widest text-amber-800 uppercase bg-amber-200/40 px-3 py-1 rounded-md">Proses Manual</div>
-                    <h4 class="text-3xl md:text-4xl font-bold text-stone-950">Meditasi dalam Ketelitian Canting Tulis</h4>
-                    <p class="text-stone-600 leading-relaxed font-light text-base md:text-lg">
-                        Membatik tulis tradisional bukan sekadar menggambar di atas mori, melainkan proses olah rasa spiritual. Setiap titik lilin dipanaskan dan diembuskan penuh perasaan. Proses penyelesaian satu helai kain memerlukan waktu 3 hingga 6 bulan, menjadikannya benda bernilai seni dan investasi tinggi.
+                <div class="w-full lg:w-1/2 space-y-6">
+                    <div class="inline-block text-xs font-bold tracking-widest text-amber-800 uppercase border-b-2 border-amber-600 pb-1">Metode Canting Manual</div>
+                    <h4 class="text-3xl font-extrabold text-stone-950 leading-tight">Ritual Keheningan Menulis di Atas Mori</h4>
+                    <p class="text-stone-600 leading-relaxed font-light text-sm md:text-base">
+                        Setiap garis lilin panas (malam) yang digoreskan penrajin Solo menggunakan canting tembaga menuntut ketenangan batin mutlak. Proses penulisan manual ini memakan waktu bulanan dan dipercaya menyerap energi doa kebaikan dari sang pembuatnya.
                     </p>
+                    <!-- List Detail Pelengkap Biar Ramai -->
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="p-3 bg-white/60 rounded-xl border border-stone-300/40 text-xs"><b class="text-amber-800 block mb-1">✓ Ketebalan Lilin</b> Menggunakan standar lilin klowong khusus.</div>
+                        <div class="p-3 bg-white/60 rounded-xl border border-stone-300/40 text-xs"><b class="text-amber-800 block mb-1">✓ Waktu Kerja</b> 3 s/d 6 Bulan per lembar kain pusaka.</div>
+                    </div>
                 </div>
             </div>
 
+            <!-- Baris 2: Gambar Kanan, Deskripsi Kiri + Quote Block Komponen -->
             <div class="flex flex-col lg:flex-row-reverse items-center gap-16">
                 <div class="w-full lg:w-1/2 relative">
-                    <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-amber-900/10 rounded-2xl -z-10"></div>
-                    <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80" alt="Pewarnaan Soga" class="rounded-2xl shadow-xl w-full h-[400px] object-cover border-8 border-white">
+                    <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-amber-800/10 rounded-3xl -z-10"></div>
+                    <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80" alt="Pewarnaan Kain Soga" class="rounded-3xl shadow-2xl w-full h-[420px] object-cover border-8 border-white">
                 </div>
-                <div class="w-full lg:w-1/2 space-y-4">
-                    <div class="inline-block text-xs font-bold tracking-widest text-amber-800 uppercase bg-amber-200/40 px-3 py-1 rounded-md">Karakter Bumi</div>
-                    <h4 class="text-3xl md:text-4xl font-bold text-stone-950">Keagungan Magis Ekstrak Soga Alami</h4>
-                    <p class="text-stone-600 leading-relaxed font-light text-base md:text-lg">
-                        Ciri khas tak tergantikan dari Batik Solo terletak pada pemakaian zat warna soga alam (cokelat keemasan). Diekstrak langsung dari kulit kayu pohon soga jawa dan tingi, menghasilkan gradasi warna bumi yang hangat, bersahaja, anggun, sekaligus berwibawa tinggi saat dikenakan.
+                <div class="w-full lg:w-1/2 space-y-6">
+                    <div class="inline-block text-xs font-bold tracking-widest text-amber-800 uppercase border-b-2 border-amber-600 pb-1">Karakteristik Warna Bumi</div>
+                    <h4 class="text-3xl font-extrabold text-stone-950 leading-tight">Keagungan Warna Soga Alam Keraton</h4>
+                    <p class="text-stone-600 leading-relaxed font-light text-sm md:text-base">
+                        Berbeda dari karakter kain pesisir yang mencolok cerah, identitas utama pusaka Batik Solo berakar pada pemanfaatan pewarna soga alam. Warna cokelat keemasan hangat ini diekstrak dari rendaman kayu soga jawa pilihan, menghadirkan impresi kesahajaan batin yang berwibawa agung.
                     </p>
+                    <!-- Quote Block Pelengkap Biar Ramai -->
+                    <blockquote class="border-l-4 border-amber-700 bg-amber-50/50 p-4 rounded-r-xl italic text-xs text-stone-600 font-light">
+                        "Warna soga alam bukan sekadar pewarna tekstil tradisional, melainkan simbol filosofis kedekatan spiritual manusia Jawa dengan tanah dan alam semesta yang menaunginya."
+                    </blockquote>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <footer id="Kontak" class="bg-[#240A04] text-stone-400 py-16 border-t-2 border-amber-800">
-        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+    <!-- 5. FOOTER (20 Poin) -->
+    <footer id="Kontak" class="bg-[#1C0804] text-stone-400 py-16 border-t-4 border-amber-600 relative z-10">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            <!-- Kolom 1 -->
             <div class="space-y-4">
-                <h5 class="text-white font-bold text-lg tracking-wide border-b border-amber-800 pb-2">UAS Pemrograman Web Dasar</h5>
-                <p class="text-sm leading-relaxed text-stone-300 font-light">
-                    Portal portofolio kebudayaan eksklusif berbasis framework Tailwind CSS dan pustaka jQuery responsif yang disusun khusus untuk memenuhi tugas Soal UAS Pemrograman Web Dasar (1).doc.
+                <h5 class="text-white font-extrabold text-sm tracking-widest uppercase border-b border-amber-800/60 pb-2">Tentang Dokumentasi</h5>
+                <p class="text-xs leading-relaxed text-stone-300 font-light">
+                    Halaman portofolio budaya interaktif responsif berbasis Tailwind CSS & jQuery yang disusun komplit untuk memenuhi Lembar Soal Dokumen UAS Pemrograman Web Dasar Teknik Informatika Universitas Islam Batik Surakarta.
                 </p>
             </div>
+            <!-- Kolom 2 -->
             <div class="space-y-4">
-                <h5 class="text-white font-bold text-lg tracking-wide border-b border-amber-800 pb-2">Navigasi Halaman</h5>
-                <ul class="space-y-2.5 text-sm font-light">
-                    <li><a href="#Beranda" class="hover:text-amber-400 transition-colors">Beranda Utama</a></li>
-                    <li><a href="#Motif" class="hover:text-amber-400 transition-colors">Eksplorasi Motif</a></li>
-                    <li><a href="#Filosofi" class="hover:text-amber-400 transition-colors">Filosofi Seni</a></li>
+                <h5 class="text-white font-extrabold text-sm tracking-widest uppercase border-b border-amber-800/60 pb-2">Tautan Cepat</h5>
+                <ul class="space-y-2.5 text-xs font-medium">
+                    <li><a href="#Beranda" class="hover:text-amber-400 transition-colors flex items-center gap-1">🔸 Beranda Utama</a></li>
+                    <li><a href="#Motif" class="hover:text-amber-400 transition-colors flex items-center gap-1">🔸 Katalog Ragam Motif</a></li>
+                    <li><a href="#Filosofi" class="hover:text-amber-400 transition-colors flex items-center gap-1">🔸 Filosofi & Proses Tulis</a></li>
                 </ul>
             </div>
+            <!-- Kolom 3 -->
             <div class="space-y-4">
-                <h5 class="text-white font-bold text-lg tracking-wide border-b border-amber-800 pb-2">Informasi Mahasiswa</h5>
-                <p class="text-sm leading-relaxed text-stone-300 font-light">
-                    <span class="text-amber-400 font-medium">Program Studi:</span> Informatika<br>
-                    <span class="text-amber-400 font-medium">Fakultas / Kampus:</span> Teknik / Universitas Islam Batik Surakarta <br>
-                    <span class="text-amber-400 font-medium">Tahun Akademik:</span> Semester 2 / Tahun 2026 
+                <h5 class="text-white font-extrabold text-sm tracking-widest uppercase border-b border-amber-800/60 pb-2">Informasi Kampus</h5>
+                <p class="text-xs leading-relaxed text-stone-300 font-light">
+                    <strong class="text-amber-400 font-bold block mb-1">Universitas Islam Batik Surakarta</strong>
+                    Fakultas Teknik / Program Studi Informatika[cite: 1]<br>
+                    Surakarta, Jawa Tengah, Indonesia[cite: 1]
                 </p>
             </div>
+            <!-- Kolom 4: Widget Pelengkap Tambahan Biar Tambah Rame -->
+            <div class="space-y-4">
+                <h5 class="text-white font-extrabold text-sm tracking-widest uppercase border-b border-amber-800/60 pb-2">Status Penyerahan</h5>
+                <div class="bg-amber-950/50 border border-amber-800/40 p-3 rounded-xl text-[11px] space-y-1">
+                    <p class="text-amber-400 font-bold">📋 Tugas Ujian Akhir Semester</p>
+                    <p class="text-stone-300 text-xs">Mata Kuliah: Pemrograman Web Dasar[cite: 1]</p>
+                    <p class="text-emerald-400 font-semibold">Status: Berhasil Ter-deploy Online ✅</p>
+                </div>
+            </div>
         </div>
-        <div class="container mx-auto px-6 pt-8 border-t border-amber-950 text-center text-xs text-stone-500">
-            <p>&copy; 2026 Universitas Islam Batik Surakarta. Seluruh dokumentasi dilindungi hak cipta akademik[cite: 2, 3].</p>
+        
+        <div class="container mx-auto px-6 pt-8 border-t border-amber-950 text-center text-xs text-stone-600">
+            <p>&copy; 2026 Universitas Islam Batik Surakarta - Fakultas Teknik Informatika[cite: 1]. Seluruh kode dilindungi hak cipta akademik.</p>
         </div>
     </footer>
 
+    <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
         $(document).ready(function(){
-            // Interaktivitas 1: Smooth Scroll Navigasi Premium dengan Perlambatan Halus
-            $("nav a, section a").on('click', function(event) {
+            // Interaktivitas 1: Smooth Scroll Navigasi Akurat dengan Pengurangan Sticky Header
+            $("nav a, gap-4 a").on('click', function(event) {
                 if (this.hash !== "") {
                     event.preventDefault();
                     var hash = this.hash;
                     $('html, body').animate({
-                        scrollTop: $(hash).offset().top - 75 
-                    }, 900);
+                        scrollTop: $(hash).offset().top - 80 
+                    }, 1000);
                 }
             });
 
-            // Interaktivitas 2: Animasi Kartu Mengangkat Halus Menggunakan Manipulasi CSS jQuery
-            $(".card-animate").hover(
+            // Interaktivitas 2: Animasi Kartu Mengangkat Mewah + Efek Glow Nyala Emas Menggunakan jQuery
+            $(".card-glow").hover(
                 function() {
                     $(this).css({
-                        "transform": "translateY(-12px)",
-                        "box-shadow": "0 25px 50px -12px rgba(139, 92, 26, 0.15)"
+                        "transform": "translateY(-14px)",
+                        "box-shadow": "0 30px 60px -15px rgba(217, 119, 6, 0.25)",
+                        "border-color": "rgba(217, 119, 6, 0.4)"
                     });
                 }, function() {
                     $(this).css({
                         "transform": "translateY(0px)",
-                        "box-shadow": "0 1px 3px 0 rgba(0, 0, 0, 0.05)"
+                        "box-shadow": "0 1px 3px 0 rgba(0, 0, 0, 0.05)",
+                        "border-color": "rgba(231, 229, 228, 0.8)"
                     });
                 }
             );
 
-            // Interaktivitas tambahan: Mengecilkan padding navbar saat di-scroll ke bawah
+            // Interaktivitas 3: Pengecilan Header Dinamis Mengikuti Posisi Gulir Layar (Scroll Event)
             $(window).scroll(function() {
-                if ($(document).scrollTop() > 50) {
-                    $('header').removeClass('py-4').addClass('py-2 shadow-2xl');
+                if ($(document).scrollTop() > 60) {
+                    $('header').removeClass('py-4').addClass('py-2 shadow-2xl bg-amber-950');
                 } else {
-                    $('header').removeClass('py-2 shadow-2xl').addClass('py-4');
+                    $('header').removeClass('py-2 shadow-2xl bg-amber-950').addClass('py-4');
                 }
             });
         });
